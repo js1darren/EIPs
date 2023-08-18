@@ -95,7 +95,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run CodeSpell
-        uses: codespell-project/actions-codespell@57beb9f38f49d773d641ac555d1565c3b6a59938
+        uses: codespell-project/actions-codespell@41170f1b9c4f5c5788cb677c6c2f9ef26010243d
         if: steps.changed.outcome == 'success'
         with:
           check_filenames: true
